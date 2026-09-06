@@ -1,0 +1,158 @@
+version: 2
+enable-beta-ecosystems: true
+updates:
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    #  Don't auto-submit github actions updates
+    # labels:
+    #   - "autosubmit"
+  - package-ecosystem: "npm"
+    directory: "web_embedding/ng-flutter"
+    schedule:
+      interval: "weekly"
+    ignore:
+      - dependency-name: "*"
+        update-types: ["version-update:semver-minor", "version-update:semver-patch"]
+    labels:
+      - "autosubmit"
+  - package-ecosystem: "pub"
+    directory: "add_to_app/books/flutter_module_books/"
+    schedule:
+      interval: "daily"
+    labels:
+      - "autosubmit"
+  - package-ecosystem: "pub"
+    directory: "add_to_app/multiple_flutters/multiple_flutters_module/"
+    schedule:
+      interval: "daily"
+    labels:
+      - "autosubmit"
+  - package-ecosystem: "pub"
+    directory: "add_to_app/plugin/flutter_module_using_plugin/"
+    schedule:
+      interval: "daily"
+    labels:
+      - "autosubmit"
+  - package-ecosystem: "pub"
+    directory: "add_to_app/prebuilt_module/flutter_module/"
+    schedule:
+      interval: "daily"
+    labels:
+      - "autosubmit"
+  - package-ecosystem: "pub"
+    directory: "analysis_defaults/"
+    schedule:
+      interval: "daily"
+    labels:
+      - "autosubmit"
+  - package-ecosystem: "pub"
+    directory: "android_splash_screen/"
+    schedule:
+      interval: "daily"
+    labels:
+      - "autosubmit"
+  - package-ecosystem: "pub"
+    directory: "animations/"
+    schedule:
+      interval: "daily"
+    labels:
+      - "autosubmit"
+  - package-ecosystem: "pub"
+    directory: "background_isolate_channels/"
+    schedule:
+      interval: "daily"
+    labels:
+      - "autosubmit"
+  - package-ecosystem: "pub"
+    directory: "desktop_photo_search/fluent_ui/"
+    schedule:
+      interval: "daily"
+    labels:
+      - "autosubmit"
+  - package-ecosystem: "pub"
+    directory: "desktop_photo_search/material/"
+    schedule:
+      interval: "daily"
+    labels:
+      - "autosubmit"
+  - package-ecosystem: "pub"
+    directory: "form_app/"
+    schedule:
+      interval: "daily"
+    labels:
+      - "autosubmit"
+  - package-ecosystem: "pub"
+    directory: "google_maps/"
+    schedule:
+      interval: "daily"
+    labels:
+      - "autosubmit"
+  - package-ecosystem: "pub"
+    directory: "ios_app_clip/"
+    schedule:
+      interval: "daily"
+    labels:
+      - "autosubmit"
+  - package-ecosystem: "pub"
+    directory: "material_3_demo/"
+    schedule:
+      interval: "daily"
+    labels:
+      - "autosubmit"
+  - package-ecosystem: "pub"
+    directory: "navigation_and_routing/"
+    schedule:
+      interval: "daily"
+    labels:
+      - "autosubmit"
+  - package-ecosystem: "pub"
+    directory: "platform_channels/"
+    schedule:
+      interval: "daily"
+    labels:
+      - "autosubmit"
+  - package-ecosystem: "pub"
+    directory: "platform_design/"
+    schedule:
+      interval: "daily"
+    labels:
+      - "autosubmit"
+  - package-ecosystem: "pub"
+    directory: "platform_view_swift/"
+    schedule:
+      interval: "daily"
+    labels:
+      - "autosubmit"
+  - package-ecosystem: "pub"
+    directory: "simple_sdf/"
+    schedule:
+      interval: "daily"
+    labels:
+      - "autosubmit"
+  - package-ecosystem: "pub"
+    directory: "simple_shader/"
+    schedule:
+      interval: "daily"
+    labels:
+      - "autosubmit"
+  - package-ecosystem: "pub"
+    directory: "testing_app/"
+    schedule:
+      interval: "daily"
+    labels:
+      - "autosubmit"
+  - package-ecosystem: "pub"
+    directory: "web_embedding/element_embedding_demo/"
+    schedule:
+      interval: "daily"
+    labels:
+      - "autosubmit"
+  - package-ecosystem: "pub"
+    directory: "web_embedding/ng-flutter/flutter/"
+    schedule:
+      interval: "daily"
+    labels:
+      - "autosubmit"
+
